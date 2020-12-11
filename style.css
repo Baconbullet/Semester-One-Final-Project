@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Michroma&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Varela+Round&display=swap');
+
+:root {
+    --main-color-1: 
+    --main-color-2: 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+/*Styling for the nav bar*/
+nav {
+    height: 80px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navpt2 {
+    height: 80px;
+    background-color: #373737;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    color: #c0c0c0 ;
+    font-weight: 500;
+    font-size: ;
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+nav ul, .first {
+    float: left;
+    margin-left: 20px;
+}
+
+nav ul, .second {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 1;
+    margin: 0 15px;
+    position: relative;
+    font-size: 18px;
+    padding: 7px 0;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+nav ul li, a {
+    color: #c0c0c0;
+}
+
+#check {
+    display: none;
+}
+
+/*styling for titles*/
+.title {
+    font-size: 25pt;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+/*Header for photo page*/
+.mainphotography {
+    position: relative;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*container for all images*/
+.image-txt-container {
+    text-align: center;
+
+}
+
+/*Styling for images*/
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 300px;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/*Modal styling*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/*Caption of modal image*/
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/*Animation for modal*/
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/*close buttom in photography page*/
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*video page format*/
+.mainvideo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/*embeded video styling*/
+#videobox {
+    display: block;
+    text-align: center;
+}
+
+/*video text styling*/
+.videotext {
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.videodetail {
+    text-align: left;
+}
+/*web design page styling*/
+.webmain {
+    margin-top: 5rem;
+}
+
+/*website image/link and text styling*/
+.myweb {
+    margin-top: 1rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    font-size: 20pt;
+    font-weight: 500;
+    text-align: center;
+}
+
+.webimg {
+    display: flex;
+    flex-direction: row;
+
+}
+.webimgs {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    min-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.webtitle {
+    font-weight: 700;
+    font-size: 30pt;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: #000000;
+
+}
+
+.webdetail {
+    margin-top: 7rem;
+    margin-left: 2rem;
+    font-size: 13pt;
+}
+
+/*about me main*/
+.memain{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/*Tablet and Mobile section*/
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
